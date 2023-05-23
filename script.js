@@ -118,7 +118,7 @@ const setup = async () => {
   $('#pokemonCount').text(`1 - ${Math.min(PAGE_SIZE, totalPokemons)} out of ${totalPokemons}`);
 
   // Modal display on click
-  $('body').on('click', '.pokeCard', async function (e) {
+  $('body').on('click', '.pokeCard', async function () {
     const pokemonName = $(this).attr('pokeName');
     const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
     const types = res.data.types.map((type) => type.type.name);

@@ -4,7 +4,7 @@
     justify-content: center;
   }
   
-  .pokeCard {
+.pokeCard {
     width: 200px;
     height: 200px;
     border: 1px solid black;
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     margin: 10px; 
-  }
+}
   
 .modal img {
     width: 100%;
